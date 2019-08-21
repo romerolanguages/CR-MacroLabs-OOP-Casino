@@ -3,7 +3,7 @@ package io.zipcoder.casino;
 
 import java.util.Scanner;
 
-import static io.zipcoder.casino.Person.createNewPlayerFromUserInput;
+//import static io.zipcoder.casino.Person.createNewPlayerFromUserInput;
 
 
 public class Casino {
@@ -12,7 +12,7 @@ public class Casino {
     //createNewPlayer creates a new player based on user input of their name
     //fillPlayerWallet fills the new player's wallet with chips based on user's input
     public static Person newPlayer() {
-        Person player = createNewPlayerFromUserInput();
+        Person player = Person.createNewPlayerFromUserInput();
         player.getWallet().fillPlayerWalletFromUserInput();
         return player;
     }
